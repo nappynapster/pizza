@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizzeria Bello</title>
+    <link rel="icon" type="image/x-icon" href="images/pizza.ico" />
+    <meta charset="UTF-8">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous">
+    
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    
+    <style type="text/css">
+        body
+        {
+            font-family: 'Roboto', sans-serif;
+            color: #000000;
+          /*  background-color: #FFFFFF;
+            background: url('images/baking-cheese-cooking-315755.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            */
+        }
+        
+        .navbar .nav-link
+        {
+            text-transform: uppercase;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        .footer-bottom
+        {
+            color: #000000;
+            padding: 1.5rem 1rem;
+            background-color: #FFFFFF;
+            font-variant: all-petite-caps;
+        }
+        
+        .footer-bottom div, address
+        {
+            font-size: 20px;
+        }
+        
+        .footer-bottom .footer-heading
+        {
+            font-size: 26px;
+        }
+        
+        .image
+        {
+            overflow: hidden;
+            transition-duration: 0.8s;
+            transition-property: transform;
+        }
+        
+        .image:hover
+        {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+
+        .kitchen
+        {
+            background-image: url('images/arbeit-backen-backer-724212.jpg');
+            background-size: cover;
+            height: 600px;
+        }
+
+        .menüblock
+        {
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .test
+        {
+            background-color: #FFFFFF;  
+        }
+        .parallax1
+        {
+          background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+        }
+
+        .parallax2
+        {
+          background: url('images/besteck-brille-drinnen-941861.jpg') no-repeat center;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+        }
+        .parallax3
+        {
+          background: url('images/pizza-1344720.jpg') no-repeat center;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+        }
+        .parallax4
+        {
+          background: url('images/alkoholisches-getrank-bar-bier-1269025.jpg') no-repeat center;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+        }
+
+        .heading-text
+        {
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            letter-spacing: 40px;
+            font-weight: 900;
+            color: #fff;    
+        }
+        .ueberschrift
+        {
+            font-size: 50px;
+            letter-spacing: 30px;
+            font-weight: 900;
+            color: #000000;
+        }
+        .ueberunsschrift
+        {
+            font-size: 18px;
+            letter-spacing: 1px;   
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="pizzeria.html">
+            <img src='images/pizza.png' width="30" height="30" class="image" alt="">
+              Pizzeria Bello
+        </a>
+        <button class="navbar-toggler collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#start" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#überuns" class="nav-link">Über Uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#speisekarte" class="nav-link">Speisekarte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="start"></div>
+    <div class="parallax1 heading-text">
+        <p>PIZZERIA BELLO</p>
+    </div>
+</div>
+
+
+    <div id="überuns" class="container-fluid mt-2 mb-2 pt-5 pb-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="ml-4 kitchen"></div>
+            </div>
+            <div class="col-lg-8">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 data-aos="fade-up" class="ueberschrift mt-4 mb-4 aos-init aos-animate">ÜBER UNS</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>
+                                <h3>Herzlich Willkommen!</h3>
+                                <br>
+                             <h2 class="ueberunsschrift">
+                                Wenn Sie Appetit auf italienische Spezialitäten haben, finden Sie in Fulda alles, was Sie sich wünschen. Denn hier verwöhnen wir Sie mit leckeren Pizzen die vor ihren Augen im Holzofen frisch zubereitet werden.
+                                In unserer Pizzeria speisen Sie in einer gemütlichen, angenehmen Atmosphäre an professionell hergerichteten Tischen und geniessen den Blick auf die schöne Umgebung. Im Sommer bietet der Aussenbereich viel Platz. 
+                                Hier sitzen Sie unter grossen weissen Schirmen im Schatten der Olivenbäume und beobachten die himmlische Idylle Fuldas.
+                            </h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2 class="ueberunsschrift">
+                            <p>
+                                <strong>Für Vegetarier und Veganer</strong>
+                                <br><br>
+                                    Eine Auswahl an veganen und vegetarischen Pizzen können sie unten aus unserer Speisekarte ennehmen
+                            </p>
+                            <p>
+                                <strong>Für Kinder</strong>
+                                <br><br>
+                                    Für unsere kleinsten Gäste stellen wir Ihnen bei Bedarf einen Kinderhochstuhl zur Verfügung. Die etwas größeren können zum Spielen die bereitgestellten Geräte im Garten verwenden.
+                            </p>
+                            <p>
+                                <strong>Gutscheine</strong>
+                                <br>
+                                    Wenn Sie auf der Suche nach einem attraktivem Geschenk sind, dann haben wir was für Sie: Unsere Gutscheine, die wir mit dem Betrag Ihrer Wahl versehen. So kann sich der/die Beschenkte bei uns einen schönen Aufenthalt gönnen.
+                            </p>
+                            
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax2"></div>
+
+    <div class="test">
+        <div id="speisekarte" class="container mt-5 mb-5 pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="ueberschrift text-center mt-4 mb-4 aos-init aos-animate">Speisekarte</h2>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr style="background-color:#ababab;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Vegetarisch</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <strong>Magherita</strong>
+                        <br>
+                        Tomatensauce, Mozzarella, Frisches Basilikum, Parmigiano, EVOO
+                    </div>
+                    <div class="col-sm">
+                        <strong>Salami</strong>
+                        <br>
+                        Geröstete Knoblauch-Basis, Fontina-Käse, Frisches Mozzarella, Parmesan, Oregano, Natives Olivenöl
+                    </div>
+                    <div class="col-sm">
+                        <strong>Diavolo</strong>
+                        <br>
+                        Pilze, Frisches Basilikum, Trüffel, Fontina-Käse, Ziegenkäse, Parmesan
+                    </div>
+                </div>
+                <div class="row mt-3 mb-4">
+                    <div class="col-sm">
+                        <strong>Magherita</strong>
+                        <br>
+                        Tomatensauce, Grüne Peperonis, Rote Zwiebeln, Pilze, Kalamata Oliven
+                    </div>
+                    <div class="col-sm">  
+                    </div>
+                    <div class="col-sm">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12">
+                            <hr style="background-color:#ababab;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Hühnchen</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <strong>Magherita</strong>
+                            <br>
+                            Tomato Sauce, Fresh Motz, Fresh Basil, Parmigiano, EVOO
+                        </div>
+                        <div class="col-sm">
+                            <strong>Buffalo</strong>
+                            <br>
+                            Gewürztes Hühnchen, Buffalo-Sauce, Cheddarkäse, Frisches Mozzarella, Parmesan
+                        </div>
+                        <div class="col-sm">
+                            <strong>Chicken Parmesan</strong>
+                            <br>
+                            Marinadensauce, Hühnchenschnitzel, Ricotta, Frisches Mozzarella, Parmesan
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm">
+                            <strong>Korean Chicken</strong>
+                            <br>
+                            Hausgemachte Chilli-Sauce, Knuspriges Hühnchen, Mozzarellakäse, Lauchzwiebel, Hausgemachtes Sesamdressing
+                        </div>
+                        <div class="col-sm">
+                            <strong>Salami</strong>
+                            <br>
+                            Tomatensauce, Salami, Käse
+                        </div>
+                        <div class="col-sm">
+                            <strong>Diavolo</strong>
+                            <br>
+                            Tomatensauce, Salami, Käse, Peperonis
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-lg-12">
+                                <hr style="background-color:#ababab;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Fleisch</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <strong>Magherita</strong>
+                                <br>
+                                Tomato Sauce, Fresh Motz, Fresh Basil, Parmigiano, EVOO
+                            </div>
+                            <div class="col-sm">
+                                <strong>Salami</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse
+                            </div>
+                            <div class="col-sm">
+                                <strong>Diavolo</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse, Peperonis
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm">
+                                <strong>Magherita</strong>
+                                <br>
+                                Tomato Sauce, Fresh Motz, Fresh Basil, Parmigiano, EVOO
+                            </div>
+                            <div class="col-sm">
+                                <strong>Salami</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse
+                            </div>
+                            <div class="col-sm">
+                                <strong>Diavolo</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse, Peperonis
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-12">
+                                    <hr style="background-color:#ababab;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Stell dir deine Pizza selbst zusammen:</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <strong>Fleisch</strong>
+                                    <br>
+                                    Schinken, Chicken, Salami, 
+                                </div>
+                                <div class="col-sm">
+                                    <strong>Vegetarisch</strong>
+                                    <br>
+                                    Tomaten,  Pilze,  Frisches Basilikum,  Lauchzwiebel,  Ricotta,  Ziegenkäse,  Rote Zwiebeln,  Peperonis,  Kalamata Oliven,  Trüffel
+                                </div>
+                                <div class="col-sm">
+                                    <strong>Käse</strong>
+                                    <br>
+                                    Gouda,  Feta,  Ziegenkäse,  Ricotta,  Mozzarellakäse,  Fontina-Käse,  Parmesan
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm">
+                                    <strong>Saucen</strong>
+                                    <br>
+                                    Tomatensauce,  Hausgemachte Chilli-Sauce,  Marinadensauce,  Buffalo-Sauce, EVOO
+                                </div>
+                                <div class="col-sm">
+                                 
+                                </div>
+                                <div class="col-sm">
+                                  
+                                </div>
+                            </div>
+            </div> 
+    </div>
+    
+    <div class="parallax3"></div>
+
+    <div class="test">
+        <div id="speisekarte" class="container mt-5 mb-5 pt-5 pb-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="ueberschrift text-center mt-4 mb-4 aos-init aos-animate">Getränkekarte</h2>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr style="background-color:#ababab;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Vegetarisch</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <strong>Magherita</strong>
+                        <br>
+                        Tomatensauce, Mozzarella, Frisches Basilikum, Parmigiano, EVOO
+                    </div>
+                    <div class="col-sm">
+                        <strong>Salami</strong>
+                        <br>
+                        Geröstete Knoblauch-Basis, Fontina-Käse, Frisches Mozzarella, Parmesan, Oregano, Natives Olivenöl
+                    </div>
+                    <div class="col-sm">
+                        <strong>Diavolo</strong>
+                        <br>
+                        Pilze, Frisches Basilikum, Trüffel, Fontina-Käse, Ziegenkäse, Parmesan
+                    </div>
+                </div>
+                <div class="row mt-3 mb-4">
+                    <div class="col-sm">
+                        <strong>Magherita</strong>
+                        <br>
+                        Tomatensauce, Grüne Peperonis, Rote Zwiebeln, Pilze, Kalamata Oliven
+                    </div>
+                    <div class="col-sm">  
+                    </div>
+                    <div class="col-sm">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-12">
+                            <hr style="background-color:#ababab;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Hühnchen</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <strong>Magherita</strong>
+                            <br>
+                            Tomato Sauce, Fresh Motz, Fresh Basil, Parmigiano, EVOO
+                        </div>
+                        <div class="col-sm">
+                            <strong>Buffalo</strong>
+                            <br>
+                            Gewürztes Hühnchen, Buffalo-Sauce, Cheddarkäse, Frisches Mozzarella, Parmesan
+                        </div>
+                        <div class="col-sm">
+                            <strong>Chicken Parmesan</strong>
+                            <br>
+                            Marinadensauce, Hühnchenschnitzel, Ricotta, Frisches Mozzarella, Parmesan
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm">
+                            <strong>Korean Chicken</strong>
+                            <br>
+                            Hausgemachte Chilli-Sauce, Knuspriges Hühnchen, Mozzarellakäse, Lauchzwiebel, Hausgemachtes Sesamdressing
+                        </div>
+                        <div class="col-sm">
+                            <strong>Salami</strong>
+                            <br>
+                            Tomatensauce, Salami, Käse
+                        </div>
+                        <div class="col-sm">
+                            <strong>Diavolo</strong>
+                            <br>
+                            Tomatensauce, Salami, Käse, Peperonis
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-lg-12">
+                                <hr style="background-color:#ababab;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Fleisch</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <strong>Magherita</strong>
+                                <br>
+                                Tomato Sauce, Fresh Motz, Fresh Basil, Parmigiano, EVOO
+                            </div>
+                            <div class="col-sm">
+                                <strong>Salami</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse
+                            </div>
+                            <div class="col-sm">
+                                <strong>Diavolo</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse, Peperonis
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm">
+                                <strong>Magherita</strong>
+                                <br>
+                                Tomato Sauce, Fresh Motz, Fresh Basil, Parmigiano, EVOO
+                            </div>
+                            <div class="col-sm">
+                                <strong>Salami</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse
+                            </div>
+                            <div class="col-sm">
+                                <strong>Diavolo</strong>
+                                <br>
+                                Tomatensauce, Salami, Käse, Peperonis
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-lg-12">
+                                    <hr style="background-color:#ababab;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="text-center mt-4 mb-5 aos-init aos-animate">Stell dir deine Pizza selbst zusammen:</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <strong>Fleisch</strong>
+                                    <br>
+                                    Schinken, Chicken, Salami, 
+                                </div>
+                                <div class="col-sm">
+                                    <strong>Vegetarisch</strong>
+                                    <br>
+                                    Tomaten,  Pilze,  Frisches Basilikum,  Lauchzwiebel,  Ricotta,  Ziegenkäse,  Rote Zwiebeln,  Peperonis,  Kalamata Oliven,  Trüffel
+                                </div>
+                                <div class="col-sm">
+                                    <strong>Käse</strong>
+                                    <br>
+                                    Gouda,  Feta,  Ziegenkäse,  Ricotta,  Mozzarellakäse,  Fontina-Käse,  Parmesan
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm">
+                                    <strong>Saucen</strong>
+                                    <br>
+                                    Tomatensauce,  Hausgemachte Chilli-Sauce,  Marinadensauce,  Buffalo-Sauce, EVOO
+                                </div>
+                                <div class="col-sm">
+                                 
+                                </div>
+                                <div class="col-sm">
+                                  
+                                </div>
+                            </div>
+            </div> 
+    </div>
+    
+    <div class="parallax4"></div>
+    
+    <div id="kontakt" class="container mt-5 mb-5 pt-5 pb-5">
+        <div class="row">
+            <div class="col-12"><h2 data-aos="fade-up" class="ueberschrift mt-4 mb-4 aos-init aos-animate">Kontakt</h2>
+                <div data-aos="fade-up" class="row aos-init aos-animate">
+                    <div id="contact-panel" class="col">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input name="contact-name" type="text" class="form-control" id="contact-name" placeholder="Name"
+                                       required="">
+                            </div>
+                            <div class="form-group">
+                                <input name="contact-mail" type="email" class="form-control" id="contact-mail" placeholder="E-Mail-Adresse"
+                                       required="">
+                            </div>
+                            <div class="form-group">
+                                <input name="contact-phone" type="text" class="form-control" id="contact-phone" placeholder="Rufnummer">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="contact-text" class="form-control" id="contact-text" placeholder="Nachricht"
+                                          rows="6"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input name="contact-consent" type="checkbox" id="contact-consent"
+                                       class="form-consent-checkbox d-inline-block mr-1" value="1" required="">
+                                <span class="form-consent-text"> Ich habe die <a href="datenschutzerklärung.html">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden. </span>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" id="contact-button" class="btn btn-primary mt-3" value="Senden">
+                            </div>
+                            <div id="form-state" class="text-center mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax4"></div>
+
+    <div class="footer-bottom test">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <address>
+                        <b class="footer-heading">Pizzeria Bello</b>
+                        <br>
+                        <span>In der Pizza-Grotte 101</span>
+                        <br>
+                        <span>36037 Fulda</span>
+                    </address>
+                </div>
+                <div class="col-lg-3">
+                    <div>
+                        <b class="footer-heading">Telefon</b>
+                        <br>
+                        <span>0234235/234532</span>
+                    </div>
+                    <div>
+                        <b class="footer-heading">Email</b>
+                        <br>
+                        <a href="mailto:kontakt@pizza-bello.de">kontakt@pizza-bello.de</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div>
+                        <b class="footer-heading">Öffnungszeiten</b>
+                        <br>
+                        <b>Montag-Freitag </b>
+                        <br>
+                        <span>11.00 - 14.30 Uhr | 17.30 - 23.00 Uhr</span>
+                        <br>
+                        <b>Samstag & Sonntag</b>
+                        <br>
+                        <span>17.30 - 22.00 Uhr</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div>
+                        <a href="impressum.html" class="footer-heading">Impressum</a>
+                        <br>
+                        <a href="datenschutzerklärung.html" class="footer-heading">Datenschutz</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
