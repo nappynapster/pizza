@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <title>Pizzeria Bello</title>
-    <link rel="icon" type="image/x-icon" href="images/pizza.ico" />
+    <link rel="icon" type="image/x-icon" href="images/pizza.ico"/>
     <meta charset="UTF-8">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -26,7 +26,7 @@
             integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
             crossorigin="anonymous"></script>
     
-    <style type="text/css">
+    <style>
         body
         {
             font-family: 'Roboto', sans-serif;
@@ -72,37 +72,99 @@
             transform: rotate(360deg);
             -webkit-transform: rotate(360deg);
         }
-
+        
         .test
         {
-            background-color: #FFFFFF;  
+            background-color: #FFFFFF;
         }
+        
         .parallax1
         {
-          background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
-          background-size: cover;
-          background-attachment: fixed;
-          height: 500px;
-          display: flex;
+            background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 500px;
+            display: flex;
         }
-
+        
         .heading-text
         {
             align-items: center;
             justify-content: center;
-            font-size: 100px;
-            letter-spacing: 40px;
+            letter-spacing: 20px;
             font-weight: 900;
-            color: #fff;    
+            color: #FFFFFF;
+            font-size: 50px;
         }
+        
         .ueberschrift
         {
-            font-size: 50px;
+            font-size: 30px;
             letter-spacing: 20px;
             font-weight: 900;
             color: #000000;
         }
-
+        
+        @media (min-width: 576px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 50px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 20px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (min-width: 768px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 50px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 20px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (min-width: 992px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 100px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 30px;
+                font-size: 50px;
+            }
+        }
+        
+        @media (min-width: 1200px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 100px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 30px;
+                font-size: 50px;
+            }
+        }
+    
     </style>
 </head>
 <body>
@@ -110,7 +172,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="pizzeria.html">
-            <img src='images/pizza.png' width="30" height="30" class="image" alt="">
+            <img src='images/pizza.png' width="32" height="32" class="image" alt="">
             Pizzeria Bello
         </a>
         <button class="navbar-toggler collapsed"
@@ -125,58 +187,72 @@
         <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                        <a href="pizzeria.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pizzeria.html #überuns" class="nav-link">Über Uns</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pizzeria.html #speisekarte" class="nav-link">Speisekarte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pizzeria.html #weinkarte" class="nav-link">Weinkarte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="pizzeria.html #kontakt" class="nav-link">Kontakt</a>
-                    </li>
+                    <a href="#start" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#überuns" class="nav-link">Über Uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#speisekarte" class="nav-link">Speisekarte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#weinkarte" class="nav-link">Weinkarte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#kontakt" class="nav-link">Kontakt</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
 <div id="start"></div>
-    <div class="parallax1 heading-text">
-        <p>PIZZERIA BELLO</p>
-    </div>
+<div class="parallax1 heading-text">
+    <p>PIZZERIA BELLO</p>
 </div>
+
 <div class="container-fluid mt-2 mb-2 pl-5 pr-5 pt-5 pb-5 padding-left-5">
-
+    
     <div class='impressum'>
-            <h2 class="ueberschrift">Impressum</h2>
-            <br>
+        <h2 class="ueberschrift">Impressum</h2>
+        <br>
         <p>Angaben gemäß § 5 TMG</p>
-        <p>Pizzeria Bello <br> 
-            Leipziger Straße 123<br> 
-            36037 Fulda <br> 
+        <p>Pizzeria Bello <br>
+           Leipziger Straße 123<br>
+           36037 Fulda <br>
         </p>
-        <p> <strong>Vertreten durch: </strong><br>
-                Pizzeria Bello<br>
-            </p><p><strong>Kontakt:</strong> <br>
-                    Telefon: 0234235%2F234532-234532<br>
-                    E-Mail: <a href='mailto:kontakt@pizza-bello.de'>kontakt@pizza-bello.de</a>
-        </br>   </p>
-                <p><strong>Haftungsausschluss: </strong><br><br><strong>Haftung für Inhalte</strong><br><br>
-                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Urheberrecht</strong><br><br>
-                    Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>
-                    Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. <br>
-                    Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. <br>
-                    Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
-            </p><br> 
-                Website Impressum von <a href="https://www.impressum-generator.de">impressum-generator.de</a>
+        <p><strong>Vertreten durch: </strong><br>
+            Pizzeria Bello<br>
+        </p>
+        <p>
+            <strong>Kontakt:</strong>
+            <br>
+            Telefon: 0234235%2F234532-234532<br>
+            E-Mail:
+            <a href='mailto:kontakt@pizza-bello.de'>kontakt@pizza-bello.de</a>
+            <br>
+        </p>
+        <p>
+            <strong>Haftungsausschluss:</strong>
+            <br><br>
+            <strong>Haftung für Inhalte</strong>
+            <br><br>
+            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br><br><strong>Urheberrecht</strong><br><br>
+            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br><br><strong>Datenschutz</strong><br><br>
+            Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+            <br>
+            Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.
+            <br>
+            Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br>
+        </p>
+        <br>
+        Website Impressum von
+        <a href="https://www.impressum-generator.de">impressum-generator.de</a>
     </div>
 
 </div>
- <div class="footer-bottom test">
+
+<div class="footer-bottom test">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-3">
@@ -223,7 +299,6 @@
         
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>
