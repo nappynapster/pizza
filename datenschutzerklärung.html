@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+<head>
     <title>Pizzeria Bello</title>
-    <link rel="icon" type="image/x-icon" href="images/pizza.ico" />
+    <link rel="icon" type="image/x-icon" href="images/pizza.ico"/>
     <meta charset="UTF-8">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+          crossorigin="anonymous">
     
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossorigin="anonymous">
     
-    <style type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    
+    <style>
         body
         {
             font-family: 'Roboto', sans-serif;
@@ -57,173 +72,251 @@
             transform: rotate(360deg);
             -webkit-transform: rotate(360deg);
         }
-
-        .test
-        {
-            background-color: #FFFFFF;  
-        }
+        
         .parallax1
         {
-          background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
-          background-size: cover;
-          background-attachment: fixed;
-          height: 500px;
-          display: flex;
+            background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 500px;
+            display: flex;
         }
-
+        
         .heading-text
         {
             align-items: center;
             justify-content: center;
-            font-size: 100px;
-            letter-spacing: 40px;
+            letter-spacing: 20px;
             font-weight: 900;
-            color: #fff;    
+            color: #FFFFFF;
+            font-size: 50px;
         }
+        
         .ueberschrift
         {
-            font-size: 50px;
+            font-size: 30px;
             letter-spacing: 20px;
             font-weight: 900;
             color: #000000;
+        }
+        
+        @media (min-width: 576px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 50px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 20px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (min-width: 768px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 50px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 20px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (min-width: 992px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 100px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 30px;
+                font-size: 50px;
+            }
+        }
+        
+        @media (min-width: 1200px)
+        {
+            .heading-text
+            {
+                letter-spacing: 40px;
+                font-size: 100px;
+            }
+            
+            .ueberschrift
+            {
+                letter-spacing: 30px;
+                font-size: 50px;
+            }
         }
     </style>
 </head>
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="pizzeria.html">
-                        <img src='images/pizza.png' width="30" height="30" class="image" alt="">
-                        Pizzeria Bello
-                    </a>
-                    <button class="navbar-toggler collapsed"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#navbarSupportedContent"
-                            aria-controls="navbarSupportedContent"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                    <a href="pizzeria.html" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pizzeria.html #überuns" class="nav-link">Über Uns</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pizzeria.html #speisekarte" class="nav-link">Speisekarte</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pizzeria.html #weinkarte" class="nav-link">Weinkarte</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="pizzeria.html #kontakt" class="nav-link">Kontakt</a>
-                                </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-    <div id="start"></div>
-    <div class="parallax1 heading-text">
-        <p>PIZZERIA BELLO</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="pizzeria.html">
+            <img src='images/pizza.png' width="32" height="32" class="image" alt="">
+            Pizzeria Bello
+        </a>
+        <button class="navbar-toggler collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="pizzeria.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pizzeria.html#aboutus" class="nav-link">Über Uns</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pizzeria.html#speisekarte" class="nav-link">Speisekarte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pizzeria.html#weinkarte" class="nav-link">Weinkarte</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pizzeria.html#kontakt" class="nav-link">Kontakt</a>
+                </li>
+            </ul>
+        </div>
     </div>
+</nav>
 
-    <div class="container-fluid mt-2 mb-2 pl-5 pr-5 pt-5 pb-5 padding-left-5">
+<div id="start"></div>
+<div class="parallax1 heading-text">
+    <p>PIZZERIA BELLO</p>
+</div>
 
-        <h2 class="ueberschrift">Datenschutzerklärung</h2>
+<div class="container-fluid mt-2 mb-2 pl-5 pr-5 pt-5 pb-5 padding-left-5">
+    
+    <h2 class="ueberschrift">Datenschutzerklärung</h2>
+    <br>
+    <p><strong>Allgemeiner Hinweis und Pflichtinformationen</strong></p>
+    <p><strong>Benennung der verantwortlichen Stelle</strong></p>
+    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+    <p>
+        <span id="s3-t-firma">Pizzeria Bello</span>
         <br>
-        <p><strong>Allgemeiner Hinweis und Pflichtinformationen</strong></p>
-        <p><strong>Benennung der verantwortlichen Stelle</strong></p>
-        <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-        <p><span id="s3-t-firma">Pizzeria Bello</span><br><span <br><span id="s3-t-strasse">Leipziger Straße 123</span><br><span id="s3-t-plz">36037</span> <span id="s3-t-ort">Fulda</span></p><p></p>
-        <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
+        <br>
+        <span id="s3-t-strasse">Leipziger Straße 123</span>
+        <br>
+        <span id="s3-t-plz">36037</span>
+        <span id="s3-t-ort">Fulda</span>
+    </p>
+    <p></p>
+    <p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
+    
+    <p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
+    <p>Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+    
+    <p><strong>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</strong></p>
+    <p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit:
+        <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
+           target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
+        </a>
+       .
+    </p>
+    
+    <p><strong>Recht auf Datenübertragbarkeit</strong></p>
+    <p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+    
+    <p><strong>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</strong></p>
+    <p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</p>
+    
+    <p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
+    <p>Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
+    
+    <p><strong>Datenübermittlung bei Vertragsschluss für Warenkauf und Warenversand</strong></p>
+    <p>Personenbezogene Daten werden nur an Dritte nur übermittelt, sofern eine Notwendigkeit im Rahmen der Vertragsabwicklung besteht. Dritte können beispielsweise Bezahldienstleister oder Logistikunternehmen sein. Eine weitergehende Übermittlung der Daten findet nicht statt bzw. nur dann, wenn Sie dieser ausdrücklich zugestimmt haben.</p>
+    <p>Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+    
+    <p><strong>Kontaktformular</strong></p>
+    <p>Per Kontaktformular übermittelte Daten werden einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.</p>
+    <p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</p>
+    <p>Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.</p>
+    
+    <p><strong>Google Web Fonts</strong></p>
+    <p>Unsere Website verwendet Web Fonts von Google. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
+    <p>Durch den Einsatz dieser Web Fonts wird es möglich Ihnen die von uns gewünschte Darstellung unserer Website zu präsentieren, unabhängig davon welche Schriften Ihnen lokal zur Verfügung stehen. Dies erfolgt über den Abruf der Google Web Fonts von einem Server von Google in den USA und der damit verbundenen Weitergabe Ihre Daten an Google. Dabei handelt es sich um Ihre IP-Adresse und welche Seite Sie bei uns besucht haben. Der Einsatz von Google Web Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Als Betreiber dieser Website haben wir ein berechtigtes Interesse an der optimalen Darstellung und Übertragung unseres Webauftritts.</p>
+    <p>Das Unternehmen Google ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert. Dieses Datenschutzübereinkommen soll die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleisten.</p>
+    <p>Einzelheiten über Google Web Fonts finden Sie unter:
+        <a href="https://www.google.com/fonts#AboutPlace:about">https://www.google.com/fonts#AboutPlace:about</a>
+       und weitere Informationen in den Datenschutzbestimmungen von Google:
+        <a href="https://policies.google.com/privacy/partners?hl=de">https://policies.google.com/privacy/partners?hl=de</a>
+    </p>
+    <p>
+        <small>Quelle: Datenschutz-Konfigurator von
+            <a href="http://www.mein-datenschutzbeauftragter.de" target="_blank">mein-datenschutzbeauftragter.de</a>
+        </small>
+    </p>
 
-        <p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
-        <p>Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+</div>
 
-        <p><strong>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</strong></p>
-        <p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
-
-        <p><strong>Recht auf Datenübertragbarkeit</strong></p>
-        <p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
-
-        <p><strong>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</strong></p>
-        <p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</p>
-
-        <p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
-        <p>Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
-
-        <p><strong>Datenübermittlung bei Vertragsschluss für Warenkauf und Warenversand</strong></p>
-        <p>Personenbezogene Daten werden nur an Dritte nur übermittelt, sofern eine Notwendigkeit im Rahmen der Vertragsabwicklung besteht. Dritte können beispielsweise Bezahldienstleister oder Logistikunternehmen sein. Eine weitergehende Übermittlung der Daten findet nicht statt bzw. nur dann, wenn Sie dieser ausdrücklich zugestimmt haben.</p>
-        <p>Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
-                    
-        <p><strong>Kontaktformular</strong></p>
-        <p>Per Kontaktformular übermittelte Daten werden einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.</p>
-        <p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</p>
-        <p>Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.</p>
-                    
-        <p><strong>Google Web Fonts</strong></p>
-        <p>Unsere Website verwendet Web Fonts von Google. Anbieter ist die Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA.</p>
-        <p>Durch den Einsatz dieser Web Fonts wird es möglich Ihnen die von uns gewünschte Darstellung unserer Website zu präsentieren, unabhängig davon welche Schriften Ihnen lokal zur Verfügung stehen. Dies erfolgt über den Abruf der Google Web Fonts von einem Server von Google in den USA und der damit verbundenen Weitergabe Ihre Daten an Google. Dabei handelt es sich um Ihre IP-Adresse und welche Seite Sie bei uns besucht haben. Der Einsatz von Google Web Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Als Betreiber dieser Website haben wir ein berechtigtes Interesse an der optimalen Darstellung und Übertragung unseres Webauftritts.</p>
-        <p>Das Unternehmen Google ist für das us-europäische Datenschutzübereinkommen "Privacy Shield" zertifiziert. Dieses Datenschutzübereinkommen soll die Einhaltung des in der EU geltenden Datenschutzniveaus gewährleisten.</p>
-        <p>Einzelheiten über Google Web Fonts finden Sie unter: <a href="https://www.google.com/fonts#AboutPlace:about">https://www.google.com/fonts#AboutPlace:about</a> und weitere Informationen in den Datenschutzbestimmungen von Google: <a href="https://policies.google.com/privacy/partners?hl=de">https://policies.google.com/privacy/partners?hl=de</a></p>
-                    <p><small>Quelle: Datenschutz-Konfigurator von <a href="http://www.mein-datenschutzbeauftragter.de" target="_blank">mein-datenschutzbeauftragter.de</a></small></p>
-                    
-    </div>    
-
-        <div class="footer-bottom">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <address>
-                                <b class="footer-heading">Pizzeria Bello</b>
-                                <br>
-                                <span>In der Pizza-Grotte 101</span>
-                                <br>
-                                <span>36037 Fulda</span>
-                            </address>
-                        </div>
-                        <div class="col-lg-3">
-                            <div>
-                                <b class="footer-heading">Telefon</b>
-                                <br>
-                                <span>0234235/234532</span>
-                            </div>
-                            <div>
-                                <b class="footer-heading">Email</b>
-                                <br>
-                                <a href="mailto:kontakt@pizza-bello.de">kontakt@pizza-bello.de</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div>
-                                <b class="footer-heading">Öffnungszeiten</b>
-                                <br>
-                                <b>Montag-Freitag </b>
-                                <br>
-                                <span>11.00 - 14.30 Uhr | 17.30 - 23.00 Uhr</span>
-                                <br>
-                                <b>Samstag & Sonntag</b>
-                                <br>
-                                <span>17.30 - 22.00 Uhr</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div>
-                                <a href="impressum.html" class="footer-heading">Impressum</a>
-                                <br>
-                                <a href="datenschutzerklärung.html" class="footer-heading">Datenschutz</a>
-                            </div>
-                        </div>
-                    
-                    </div>
+<div class="footer-bottom">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <address>
+                    <b class="footer-heading">Pizzeria Bello</b>
+                    <br>
+                    <span>In der Pizza-Grotte 101</span>
+                    <br>
+                    <span>36037 Fulda</span>
+                </address>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <b class="footer-heading">Telefon</b>
+                    <br>
+                    <span>0234235/234532</span>
+                </div>
+                <div>
+                    <b class="footer-heading">Email</b>
+                    <br>
+                    <a href="mailto:kontakt@pizza-bello.de">kontakt@pizza-bello.de</a>
                 </div>
             </div>
+            <div class="col-lg-3">
+                <div>
+                    <b class="footer-heading">Öffnungszeiten</b>
+                    <br>
+                    <b>Montag-Freitag </b>
+                    <br>
+                    <span>11.00 - 14.30 Uhr | 17.30 - 23.00 Uhr</span>
+                    <br>
+                    <b>Samstag & Sonntag</b>
+                    <br>
+                    <span>17.30 - 22.00 Uhr</span>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div>
+                    <a href="impressum.html" class="footer-heading">Impressum</a>
+                    <br>
+                    <a href="datenschutzerklärung.html" class="footer-heading">Datenschutz</a>
+                </div>
+            </div>
+        
         </div>
+    </div>
+</div>
 </body>
 </html>
