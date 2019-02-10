@@ -31,9 +31,6 @@
         {
             font-family: 'Roboto', sans-serif;
             color: #000000;
-            background-color: #FFFFFF;
-            background: url('images/baking-cheese-cooking-315755.jpg');
-            background-size: cover;
         }
         
         .navbar .nav-link
@@ -76,18 +73,36 @@
             -webkit-transform: rotate(360deg);
         }
 
-        .texthintergrund {
-            
-            background-color: #FFFFFF;
-            opacity: 0.7;   
+        .test
+        {
+            background-color: #FFFFFF;  
+        }
+        .parallax1
+        {
+          background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
         }
 
-        .text {
-            padding: 2rem 15rem;
-            color: #000000;
-            background-color: #FFFFFF;
-            opacity: 0.7;
+        .heading-text
+        {
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            letter-spacing: 40px;
+            font-weight: 900;
+            color: #fff;    
         }
+        .ueberschrift
+        {
+            font-size: 50px;
+            letter-spacing: 20px;
+            font-weight: 900;
+            color: #000000;
+        }
+
     </style>
 </head>
 <body>
@@ -126,10 +141,16 @@
     </div>
 </nav>
 
+<div id="start"></div>
+    <div class="parallax1 heading-text">
+        <p>PIZZERIA BELLO</p>
+    </div>
+</div>
+<div class="container-fluid mt-2 mb-2 pl-5 pr-5 pt-5 pb-5 padding-left-5">
 
-<div class="text">
     <div class='impressum'>
-        <h2>Impressum</h2>
+            <h2 class="ueberschrift">Impressum</h2>
+            <br>
         <p>Angaben gemäß § 5 TMG</p>
         <p>Pizzeria Bello <br> 
             Leipziger Straße 123<br> 
@@ -150,8 +171,8 @@
             </p><br> 
                 Website Impressum von <a href="https://www.impressum-generator.de">impressum-generator.de</a>
     </div>
-</div> 
 
+</div>
  <div class="footer-bottom test">
     <div class="container-fluid">
         <div class="row">
@@ -191,7 +212,7 @@
             </div>
             <div class="col-lg-3">
                 <div>
-                    <a href="impressum.html" class="footer-heading">Impresum</a>
+                    <a href="impressum.html" class="footer-heading">Impressum</a>
                     <br>
                     <a href="datenschutzerklärung.html" class="footer-heading">Datenschutz</a>
                 </div>

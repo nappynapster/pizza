@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <title>Pizzeria Bello</title>
+    <link rel="icon" type="image/x-icon" href="images/pizza.ico" />
     <meta charset="UTF-8">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -15,10 +16,17 @@
         {
             font-family: 'Roboto', sans-serif;
             color: #000000;
-            background-color: #FFFFFF;
-            background: url('images/baking-cheese-cooking-315755.jpg');
-            background-size: cover;
-        }    
+        }
+        
+        .navbar .nav-link
+        {
+            text-transform: uppercase;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
         .footer-bottom
         {
             color: #000000;
@@ -36,28 +44,48 @@
         {
             font-size: 26px;
         }
-        .image {
-                overflow: hidden;
-                transition-duration: 0.8s;
-                transition-property: transform;
-                background-color: #FFFFFF; 
-                opacity: 0.7; 
-            }
-            .image:hover {
-                transform: rotate(360deg);
-                -webkit-transform: rotate(360deg);
-                }
-
-        .texthintergrund {
-            
-            background-color: #FFFFFF;
-            opacity: 0.7;   
+        
+        .image
+        {
+            overflow: hidden;
+            transition-duration: 0.8s;
+            transition-property: transform;
         }
-        .text {
-            padding: 2rem 15rem;
+        
+        .image:hover
+        {
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+        }
+
+        .test
+        {
+            background-color: #FFFFFF;  
+        }
+        .parallax1
+        {
+          background: url('images/baking-cheese-cooking-315755.jpg') no-repeat center;
+          background-size: cover;
+          background-attachment: fixed;
+          height: 500px;
+          display: flex;
+        }
+
+        .heading-text
+        {
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            letter-spacing: 40px;
+            font-weight: 900;
+            color: #fff;    
+        }
+        .ueberschrift
+        {
+            font-size: 50px;
+            letter-spacing: 20px;
+            font-weight: 900;
             color: #000000;
-            background-color: #FFFFFF;
-            opacity: 0.8;
         }
     </style>
 </head>
@@ -96,9 +124,16 @@
                     </div>
                 </div>
             </nav>
-    <div class="text">
 
-        <h2>Datenschutzerklärung</h2>
+    <div id="start"></div>
+    <div class="parallax1 heading-text">
+        <p>PIZZERIA BELLO</p>
+    </div>
+
+    <div class="container-fluid mt-2 mb-2 pl-5 pr-5 pt-5 pb-5 padding-left-5">
+
+        <h2 class="ueberschrift">Datenschutzerklärung</h2>
+        <br>
         <p><strong>Allgemeiner Hinweis und Pflichtinformationen</strong></p>
         <p><strong>Benennung der verantwortlichen Stelle</strong></p>
         <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
@@ -177,7 +212,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div>
-                                <a href="impressum.html" class="footer-heading">Impresum</a>
+                                <a href="impressum.html" class="footer-heading">Impressum</a>
                                 <br>
                                 <a href="datenschutzerklärung.html" class="footer-heading">Datenschutz</a>
                             </div>
